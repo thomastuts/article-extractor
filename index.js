@@ -19,6 +19,18 @@ var articlesToParse = [
   {
     url: 'http://paulgraham.com/altair.html',
     filename: 'paulgraham'
+  },
+  {
+    url: 'http://www.economist.com/news/united-states/21646763-when-lethal-injection-gets-tricky-try-guns-or-gas-drugs-dont-work',
+    filename: 'the-economist'
+  },
+  {
+    url: 'http://onstartups.com/insider-look-at-hubspot-sidekick-growth-approach',
+    filename: 'on-startups'
+  },
+  {
+    url: 'http://www.smashingmagazine.com/2015/03/20/better-browser-input-events/',
+    filename: 'smashing-magazine'
   }
 ];
 
