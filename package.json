@@ -1,0 +1,22 @@
+{
+  "name": "dissect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "screenshot-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomastuts/dissect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomastuts/dissect/issues"
+  },
+  "homepage": "https://github.com/thomastuts/dissect",
+  "dependencies": {
+    "webshot": "^0.15.4"
+  }
+}
