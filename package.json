@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/thomastuts/dissect",
   "dependencies": {
+    "cheerio": "^0.19.0",
+    "lodash": "^3.5.0",
+    "request": "^2.53.0",
     "webshot": "^0.15.4"
   }
 }

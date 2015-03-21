@@ -1,6 +1,5 @@
-var screenshotter = require('./lib/screenshotter');
+var parser = require('./lib/parser');
 
-screenshotter.takeScreenshotOfPage('techcrunch.com/2015/03/20/from-the-8200-to-silicon-valley/', 'data/techcrunch.png', function () {
-  process.exit(0);
+parser.parse('http://techcrunch.com/2015/03/20/from-the-8200-to-silicon-valley/', function (err, data) {
+  console.log(data);
 });
-
