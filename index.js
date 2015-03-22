@@ -36,6 +36,7 @@ var articlesToParse = [
 
 async.each(articlesToParse, function (articleToParse, parseCallback) {
   parser.parse(articleToParse.url, function (err, data) {
+    console.log('Parsed article:', data.title);
     fs.writeFileSync(path.join(process.cwd(), 'data/' + articleToParse.filename + '.html'), data.content);
     parseCallback();
   });
