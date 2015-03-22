@@ -1,17 +1,14 @@
 {
   "name": "dissect",
   "version": "1.0.0",
-  "description": "",
-  "main": "screenshot-test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Extract metadata and content from web articles.",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thomastuts/dissect.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Tuts <thomas.tuts@gmail.com> (http://thomastuts.com)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/thomastuts/dissect/issues"
   },
