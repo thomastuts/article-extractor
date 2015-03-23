@@ -31,6 +31,10 @@ var articlesToParse = [
   {
     url: 'http://www.smashingmagazine.com/2015/03/20/better-browser-input-events/',
     filename: 'smashing-magazine'
+  },
+  {
+    url: 'http://nextviewventures.com/blog/pretotyping-product-market-fit-google-alberto-savoia/',
+    filename: 'next-view-ventures'
   }
 ];
 
