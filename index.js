@@ -12,11 +12,11 @@ module.exports = {
       var data = {};
       var preppedHtml = cleaner.prepForParsing(body);
 
-      data.host = url.parse(articleUrl).host;
+      data.domain = url.parse(articleUrl).host;
       data.author = author.getAuthor(preppedHtml);
-      data.content = content.getArticleContent(preppedHtml, data.host);
       data.title = title.getTitle(preppedHtml);
       data.summary = summary.getSummary(preppedHtml, data.content);
+      data.content = content.getArticleContent(preppedHtml, data.host);
 
       callback(null, data);
     });
