@@ -1,4 +1,5 @@
 var request = require('request');
+var url = require('url');
 var cleaner = require('./lib/cleaner');
 var author = require('./lib/parser/author');
 var content = require('./lib/parser/content');
@@ -6,16 +7,16 @@ var title = require('./lib/parser/title');
 var summary = require('./lib/parser/summary');
 
 module.exports = {
-  extractData: function (url, callback) {
-    request(url, function (err, response, body) {
+  extractData: function (articleUrl, callback) {
+    request(articleUrl, function (err, response, body) {
+      var data = {};
       var preppedHtml = cleaner.prepForParsing(body);
 
-      var data = {
-        author: author.getAuthor(preppedHtml),
-        content: content.getArticleContent(preppedHtml),
-        title: title.getTitle(preppedHtml),
-        summary: summary.getSummary(preppedHtml)
-      };
+      data.host = url.parse(articleUrl).host;
+      data.author = author.getAuthor(preppedHtml);
+      data.content = content.getArticleContent(preppedHtml, data.host);
+      data.title = title.getTitle(preppedHtml);
+      data.summary = summary.getSummary(preppedHtml, data.content);
 
       callback(null, data);
     });
