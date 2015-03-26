@@ -1,4 +1,4 @@
-var dissect = require('./index');
+var extractor = require('./index');
 var fs = require('fs');
 var path = require('path');
 var async = require('async');
@@ -39,7 +39,7 @@ var articlesToParse = [
 ];
 
 async.each(articlesToParse, function (articleToParse, parseCallback) {
-  dissect.extractData(articleToParse.url, function (err, data) {
+  extractor.extractData(articleToParse.url, function (err, data) {
     console.log('Parsed article:', data.title);
     console.log(data.summary);
     console.log('-----');

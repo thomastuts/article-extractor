@@ -1,18 +1,26 @@
 {
-  "name": "dissect",
+  "name": "article-extractor",
   "version": "1.0.0",
   "description": "Extract metadata and content from web articles.",
   "main": "index.js",
+  "keywords": [
+    "article",
+    "blog",
+    "parsing",
+    "extract",
+    "web",
+    "scrape"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomastuts/dissect.git"
+    "url": "https://github.com/thomastuts/article-extractor.git"
   },
   "author": "Thomas Tuts <thomas.tuts@gmail.com> (http://thomastuts.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomastuts/dissect/issues"
+    "url": "https://github.com/thomastuts/article-extractor/issues"
   },
-  "homepage": "https://github.com/thomastuts/dissect",
+  "homepage": "https://github.com/thomastuts/article-extractor",
   "dependencies": {
     "async": "^0.9.0",
     "cheerio": "^0.19.0",
