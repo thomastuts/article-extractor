@@ -15,8 +15,8 @@ module.exports = {
       data.domain = url.parse(articleUrl).host;
       data.author = author.getAuthor(preppedHtml);
       data.title = title.getTitle(preppedHtml);
-      data.summary = summary.getSummary(preppedHtml, data.content);
       data.content = content.getArticleContent(preppedHtml, data.host);
+      data.summary = summary.getSummary(preppedHtml, data.content);
 
       callback(null, data);
     });
