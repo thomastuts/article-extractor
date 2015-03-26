@@ -9,7 +9,7 @@ To see what features are coming up next, or if you'd like to suggest one yoursel
 ## Demo
 You can see `article-extractor` in action here:
 ```
-GET http://article-extractor.com.thomastuts.com/parse?url=AN_ARTICLE_URL
+GET http://article-extractor.thomastuts.com/parse?url=AN_ARTICLE_URL
 ```
 
 
